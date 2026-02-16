@@ -10,13 +10,13 @@ int main()
     for (int i = 0; i < 10; i++) 
         s1[i] = i * i;
 
-    cout << "Statisticheskiy bez ukazatelya: ";
+    cout << "Статистический без указателя: ";
     for (int i = 0; i < 10; i++)  
         cout << s1[i] <<" ";
     
     cout << "\n";
 
-    int s2[S];
+    int s2[S] ;
     int* w = s2;
 
     for (int i = 0; i < 10; i++) {
@@ -25,7 +25,7 @@ int main()
     }
     
     w = s2;
-    cout << "Statisticheskiy s ukazatelya: ";
+    cout << "Статистический c указателем: ";
     for (int i = 0; i < 10; i++) {
         cout << *w << " ";
         w++;
@@ -39,7 +39,7 @@ int main()
     for (int i = 0; i < 10; i++) 
         s3[i] = i * i;
     
-    cout << "Dinamicheskiy bez ukazatelya: ";
+    cout << "Динамический без указателя: ";
     for (int i = 0; i < 10; i++) 
         cout << s3[i] <<" ";
     
@@ -57,7 +57,7 @@ int main()
     }
 
     w2 = s4;
-    cout << "Statisticheskiy s ukazatelya: ";
+    cout << "Динамический с указателем: ";
     for (int i = 0; i < 10; i++) {
         cout << *w2 <<" ";
         w2++;
