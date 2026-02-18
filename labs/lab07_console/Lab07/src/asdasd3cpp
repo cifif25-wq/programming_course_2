@@ -3,7 +3,7 @@ using namespace std;
 
 struct Node {
     int data;
-    Node* next;
+    Node* next; //dvuh svyaz
     Node* prev;
 
     Node(int value) : data(value), next(nullptr), prev(nullptr){}
@@ -37,7 +37,7 @@ int main()
     Node* curr = head;
     while (curr->next != nullptr)
         curr = curr->next;
-
+    cout << "bekabeka\n";
     while (curr != nullptr) {
         cout << curr->data << " ";
         curr = curr->prev;
